@@ -1,0 +1,34 @@
+RewriteEngine On
+
+# GLOBAL
+RewriteRule  ^admin$ admin.php
+RewriteRule ^home$ index.php
+
+#---------------------------- VIEW --------------------------
+#---------- Service ----------------------------
+RewriteRule ^listeServices$ view/pages/admin/services/liste.php
+RewriteRule ^corbeilleServices$ view/pages/admin/services/corbeille.php
+
+
+#---------- avis ----------------------------
+RewriteRule ^listeAvis$ view/pages/admin/avis/liste.php
+RewriteRule ^corbeilleAvis$ view/pages/admin/avis/corbeille.php
+
+#---------- users ----------------------------
+RewriteRule ^listeUsers$ view/pages/admin/users/liste.php
+RewriteRule ^corbeilleUsers$ view/pages/admin/users/corbeille.php
+
+#---------- freelancers ----------------------------
+RewriteRule ^listeFreelancers$ view/pages/admin/freelancers/liste.php
+RewriteRule ^corbeilleFreelancers$ view/pages/admin/freelancers/corbeille.php
+
+#---------- Dashboard ----------------------------
+RewriteRule ^dashboard$ admin.php
+
+
+#---------- Register ----------------------------
+RewriteRule ^register$ register.php
+
+
+#---------- Login ----------------------------
+RewriteRule ^login$ login.php
